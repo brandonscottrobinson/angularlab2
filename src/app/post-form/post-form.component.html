@@ -1,0 +1,22 @@
+<div class="form-container">
+  <form class="form" #addForm="ngForm" (ngSubmit)="addPost(addForm)">
+    <!-- forms module needs to be imported before ngModel can be used -->
+    <label>Title</label>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      placeholder="Enter Your Name"
+      ngModel
+    />
+    <Label>Thought</Label>
+    <input
+      type="text"
+      name="thought"
+      id="thought"
+      placeholder="Enter Your thought"
+      ngModel
+    />
+    <button>Add Post</button>
+  </form>
+</div>
